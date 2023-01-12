@@ -1,134 +1,67 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2706
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red255\green255\blue255;
-\red10\green9\blue27;\red183\green188\blue196;\red224\green33\blue121;\red182\green188\blue196;\red255\green255\blue255;
-\red230\green211\blue161;\red246\green47\blue38;\red199\green112\blue136;\red113\green149\blue133;\red16\green0\blue193;
-\red146\green26\blue31;\red255\green255\blue255;\red58\green58\blue57;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c100000\c100000\c99971;
-\cssrgb\c4039\c4055\c13849;\cssrgb\c76676\c78644\c81198;\cssrgb\c91075\c24351\c54788;\cssrgb\c76471\c78431\c81176;\cssrgb\c100000\c100000\c99971\c0;
-\cssrgb\c92160\c85813\c69274;\cssrgb\c98203\c28149\c19421;\cssrgb\c82676\c52409\c60271;\cssrgb\c51315\c64674\c59293;\cssrgb\c8751\c8865\c80303;
-\cssrgb\c64684\c16372\c16210;\cssrgb\c100000\c100000\c99926;\cssrgb\c29052\c29052\c29015;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 1. explaing the architecture of nodejs\
-Answer:-\
-\pard\pardeftab720\sa200\qj\partightenfactor0
-\AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 Node.js is a JavaScript-based platform that is mainly used to create I/O-intensive web applications such as chat apps, multimedia streaming sites, etc. It is built on Google Chrome\'92s V8 JavaScript engine. A web application is software that runs on a server and is rendered by a client browser that accesses all of the application\'92s resources through the internet.\'a0\
-A typical web application consists of the following components:\
-\pard\tx220\tx720\pardeftab720\li720\fi-720\qj\partightenfactor0
-\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 Client:\'a0A client refers to the user who interacts with the server by sending out requests.\
-\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 Server:\'a0The server is in charge of receiving client requests, performing appropriate tasks, and returning results to the clients. It serves as a bridge between the front-end and the stored data, allowing clients to perform operations on the data.\
-\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec4 Database:\'a0A database is where a web application\'92s data is stored. Depending on the client\'92s request, the data can be created, modified, and deleted.\
-\pard\pardeftab720\sa200\qj\partightenfactor0
-\cf2 \cb3 \strokec4 Node.js Server Architecture:\'a0To manage several concurrent clients, Node.js employs a \'93Single Threaded Event Loop\'94 design. The JavaScript event-based model and the JavaScript callback mechanism are employed in the Node.js Processing Model. It employs two fundamental concepts: \'a0\AppleTypeServices \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 2. explain the feature of nodejs like non-blocking, synchronous, single threaded.\
-Answer:-{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/10570246/what-is-non-blocking-or-asynchronous-i-o-in-node-js"}}{\fldrslt \cf2 \cb3 \expnd0\expndtw0\kerning0
-\ul \ulc2 \outl0\strokewidth0 \strokec2 \
-}}\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/10570246/what-is-non-blocking-or-asynchronous-i-o-in-node-js"}}{\fldrslt \cf2 \cb3 \expnd0\expndtw0\kerning0
-\ul \ulc2 \outl0\strokewidth0 \strokec2 Synchronous}}\cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec5 \'a0(or sync) execution usually refers to code executing in sequence. In sync programming, the program is executed line by line, one line at a time. Each time a function is called, the program execution waits until that function returns before continuing to the next line of code.\
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 Blocking\cb3 \strokec5 \'a0refers to operations that block further execution until that operation finishes while\'a0\cb3 \strokec2 non-blocking\cb3 \strokec5 \'a0refers to code that doesn\'92t block execution. Or as\'a0{\field{\*\fldinst{HYPERLINK "https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/#blocking"}}{\fldrslt \cb3 \ul \strokec2 Node.js}}\'a0docs puts it, blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes.\
-\
-\pard\pardeftab720\sa660\partightenfactor0
-\cf2 \cb3 \strokec5 In Node, non-blocking primarily refers to I/O operations, and JavaScript that exhibits poor performance due to being CPU intensive rather than waiting on a non-JavaScript operation, such as I/O, isn\'92t typically referred to as blocking.All of the I/O methods in the Node.js standard library provide async versions, which are non-blocking, and accept callback functions. Some methods also have blocking counterparts, which have names that end with Sync.Non-blocking I/O operations allow a single process to serve multiple requests at the same time. Instead of the process being blocked and waiting for I/O operations to complete, the I/O operations are delegated to the system, so that the process can execute the next piece of code. Non-blocking I/O operations provide a callback function that is called when the operation is completed.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-3. create a array and object in javascript and print it.\
-Answer:-\
-const cars = [\
-  "Saab",\
-  "Volvo",\
-  "BMW"\
-];\
-Console.log(cars);\
-const arr = new Array("Saab", "Volvo", "BMW");\
-Console.log(arr);\
-4. Nowadays how data is transferred between server and client?(explain about json)\
-Answer:-\
-\pard\pardeftab720\sa360\partightenfactor0
-\cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec6 To define\'a0JSON, we can\'a0say\'a0it is a text-based, lightweight, and human-readable format for data exchange between clients and servers. JSON is derived from JavaScript and bears a close resemblance to JavaScript objects, but it is not dependent on JavaScript. JSON is language-independent, and support for the JSON data format is available in all popular languages, some of which are C#, PHP, Java, C++, Python, and Ruby.\
-JSON can be used in web applications for data transfer. Consider the following block diagram of the simple client-server architecture. Assume that the client is a browser that sends an HTTP request to the server, and the server serves the request and responses as expected. This is visualized as in the following screenshot:\
-In the preceding two-way communication, the data format used is a serialized string, with the combination of key-value pairs enveloped in parentheses; that is JSON!\
-Prior to JSON, XML was considered to be the\'a0chosen\'a0data interchange format. XML parsing required an XML DOM implementation on the client side that would ingest the XML response, and then XPath was used to query the response in order to access and retrieve the data. This made life tedious, as querying for data had to be performed at two levels: first on the server side where the data was being queried from a database, and a second time on the client side using XPath. JSON does not need any specific implementations; the JavaScript engine in the browser handles JSON parsing.\
-XML messages often tend to be heavy and verbose and take up a lot of bandwidth while sending the data over a network connection. Once the XML message is retrieved, it has to be loaded into memory to parse it; let us take a look at a\'a0\cb3 \strokec7 students\cb3 \strokec6 \'a0data feed in XML and JSON.
-\fs32 \cf8 \cb2 \strokec8 \
-\pard\pardeftab720\sa660\partightenfactor0
-
-\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 \
-5. write program to show how to append, pop and sort elements in array in javascript.\
+1. explaing the architecture of nodejs
 Answer:-
-\f1 \cf2 \cb9 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec10 \
+Node.js is a JavaScript-based platform that is mainly used to create I/O-intensive web applications such as chat apps, multimedia streaming sites, etc. It is built on Google Chrome’s V8 JavaScript engine. A web application is software that runs on a server and is rendered by a client browser that accesses all of the application’s resources through the internet. 
+A typical web application consists of the following components:
+	•	Client: A client refers to the user who interacts with the server by sending out requests.
+	•	Server: The server is in charge of receiving client requests, performing appropriate tasks, and returning results to the clients. It serves as a bridge between the front-end and the stored data, allowing clients to perform operations on the data.
+	•	Database: A database is where a web application’s data is stored. Depending on the client’s request, the data can be created, modified, and deleted.
+Node.js Server Architecture: To manage several concurrent clients, Node.js employs a “Single Threaded Event Loop” design. The JavaScript event-based model and the JavaScript callback mechanism are employed in the Node.js Processing Model. It employs two fundamental concepts:  
+2. explain the feature of nodejs like non-blocking, synchronous, single threaded.
+Answer:-
 
-\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-For sort:-\
-\pard\pardeftab720\partightenfactor0
+Synchronous (or sync) execution usually refers to code executing in sequence. In sync programming, the program is executed line by line, one line at a time. Each time a function is called, the program execution waits until that function returns before continuing to the next line of code.
+Blocking refers to operations that block further execution until that operation finishes while non-blocking refers to code that doesn’t block execution. Or as Node.js docs puts it, blocking is when the execution of additional JavaScript in the Node.js process must wait until a non-JavaScript operation completes.
 
-\f1 \cf2 \cb9 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec11 let\cb9 \strokec10  numbers = [\cb9 \strokec12 0\cb9 \strokec10 , \cb9 \strokec12 1\cb9 \strokec10  , \cb9 \strokec12 2\cb9 \strokec10 , \cb9 \strokec12 3\cb9 \strokec10 , \cb9 \strokec12 10\cb9 \strokec10 , \cb9 \strokec12 20\cb9 \strokec10 , \cb9 \strokec12 30\cb9 \strokec10  ];\
-numbers.sort();\
-\cb9 \strokec13 console\cb9 \strokec10 .log(numbers);\
-\
-For pop:-\
-\pard\pardeftab720\partightenfactor0
+In Node, non-blocking primarily refers to I/O operations, and JavaScript that exhibits poor performance due to being CPU intensive rather than waiting on a non-JavaScript operation, such as I/O, isn’t typically referred to as blocking.All of the I/O methods in the Node.js standard library provide async versions, which are non-blocking, and accept callback functions. Some methods also have blocking counterparts, which have names that end with Sync.Non-blocking I/O operations allow a single process to serve multiple requests at the same time. Instead of the process being blocked and waiting for I/O operations to complete, the I/O operations are delegated to the system, so that the process can execute the next piece of code. Non-blocking I/O operations provide a callback function that is called when the operation is completed.
+3. create a array and object in javascript and print it.
+Answer:-
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+Console.log(cars);
+const arr = new Array("Saab", "Volvo", "BMW");
+Console.log(arr);
+4. Nowadays how data is transferred between server and client?(explain about json)
+Answer:-
+To define JSON, we can say it is a text-based, lightweight, and human-readable format for data exchange between clients and servers. JSON is derived from JavaScript and bears a close resemblance to JavaScript objects, but it is not dependent on JavaScript. JSON is language-independent, and support for the JSON data format is available in all popular languages, some of which are C#, PHP, Java, C++, Python, and Ruby.
+JSON can be used in web applications for data transfer. Consider the following block diagram of the simple client-server architecture. Assume that the client is a browser that sends an HTTP request to the server, and the server serves the request and responses as expected. This is visualized as in the following screenshot:
+In the preceding two-way communication, the data format used is a serialized string, with the combination of key-value pairs enveloped in parentheses; that is JSON!
+Prior to JSON, XML was considered to be the chosen data interchange format. XML parsing required an XML DOM implementation on the client side that would ingest the XML response, and then XPath was used to query the response in order to access and retrieve the data. This made life tedious, as querying for data had to be performed at two levels: first on the server side where the data was being queried from a database, and a second time on the client side using XPath. JSON does not need any specific implementations; the JavaScript engine in the browser handles JSON parsing.
+XML messages often tend to be heavy and verbose and take up a lot of bandwidth while sending the data over a network connection. Once the XML message is retrieved, it has to be loaded into memory to parse it; let us take a look at a students data feed in XML and JSON.
 
-\f0 \cf2 \cb3 \strokec14 const\cb3 \strokec2 \'a0fruits = [\cb3 \strokec15 "Banana"\cb3 \strokec2 ,\'a0\cb3 \strokec15 "Orange"\cb3 \strokec2 ,\'a0\cb3 \strokec15 "Apple"\cb3 \strokec2 ,\'a0\cb3 \strokec15 "Mango"\cb3 \strokec2 ];\
+
+5. write program to show how to append, pop and sort elements in array in javascript.
+Answer:-
+
+For sort:-
+let numbers = [0, 1 , 2, 3, 10, 20, 30 ];
+numbers.sort();
+console.log(numbers);
+
+For pop:-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
-\f1 \cb9 \strokec10 \
-Console.log(fruit);\
-\
-For append:-\
-Let arr=[0,1,2,3];\
-arr.push(4)
-\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 ;\
-\pard\pardeftab720\partightenfactor0
+Console.log(fruit);
 
-\f1 \cf2 \cb9 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec10 console.log(arr;\
-\pard\pardeftab720\partightenfactor0
+For append:-
+Let arr=[0,1,2,3];
+arr.push(4);
+console.log(arr;
 
-\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 6. why should we use let in place of var in our javascript programs?\
-Answer:-\
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec16 let\'a0allows you to declare variables that are limited to the scope of a\'a0{\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block"}}{\fldrslt \cb3 \ul \strokec2 block}}\'a0statement, or expression on which it is used, unlike the\'a0{\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var"}}{\fldrslt \cb3 \ul \strokec2 var}}\'a0keyword, which declares a variable globally, or locally to an entire function regardless of block scope.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 7. explain about all the primitive data types in javascript.\
-Answer:-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 \
-\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-\pard\pardeftab720\sa240\qj\partightenfactor0
-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 JavaScript has seven types. Types are values that JavaScript can have. Below is a list of data types that JavaScript can have:\
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Number\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 String\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Boolean\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Undefined\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Null\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	6	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Object\
-\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	7	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Symbol\
-}
+6. why should we use let in place of var in our javascript programs?
+Answer:-
+let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
+
+7. explain about all the primitive data types in javascript.
+Answer:-
+
+JavaScript has seven types. Types are values that JavaScript can have. Below is a list of data types that JavaScript can have:
+	1	Number
+	2	String
+	3	Boolean
+	4	Undefined
+	5	Null
+	6	Object
+	7	Symbol
